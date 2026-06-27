@@ -1,0 +1,32 @@
+
+=== Roman-empire | 22662 nodes, 18 classes, h=0.047 | 10 splits ===
+model         acc      auc      ece      nll    brier
+MLP         0.358    0.852    0.132    2.066    0.807
+GCNII       0.566    0.906    0.181    1.552    0.599
+FAGCN       0.601    0.926    0.179    1.407    0.560
+LINKX       0.648    0.919    0.075    1.164    0.478
+POLARIS-U         0.729    0.962    0.082    0.879    0.378
+POLARIS       0.710    0.955    0.080    0.951    0.403
+  -> POLARIS vs FAGCN acc: mean diff +10.9, Wilcoxon p=0.0020
+
+=== Amazon-ratings | 24492 nodes, 5 classes, h=0.380 | 10 splits ===
+model         acc      auc      ece      nll    brier
+MLP         0.387    0.592    0.041    1.389    0.717
+GCNII       0.419    0.647    0.046    1.343    0.697
+FAGCN       0.410    0.646    0.049    1.354    0.703
+LINKX       0.378    0.588    0.019    1.388    0.718
+POLARIS-U         0.417    0.645    0.022    1.338    0.695
+POLARIS       0.401    0.605    0.027    1.370    0.709
+  -> POLARIS vs FAGCN acc: mean diff -0.9, Wilcoxon p=0.0098
+
+=== Minesweeper | 10000 nodes, 2 classes, h=0.683 | 10 splits ===
+model         acc      auc      ece      nll    brier
+MLP         0.804    0.762    0.120    0.490    0.317
+GCNII       0.800    0.501    0.234    0.624    0.431
+FAGCN       0.800    0.533    0.246    0.633    0.443
+LINKX       0.800    0.496    0.173    0.573    0.382
+POLARIS-U         0.807    0.811    0.045    0.402    0.260
+POLARIS       0.823    0.855    0.065    0.383    0.245
+  -> POLARIS vs FAGCN acc: mean diff +2.3, Wilcoxon p=0.0020
+
+Note: GGCN/GloGNN use dense O(n^2) adjacency and are out of memory on these 10-25k-node graphs (oom).

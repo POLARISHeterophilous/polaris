@@ -1,0 +1,7 @@
+Fair single-harness comparison (our load_dataset + train_polaris, shared protocol: hidden 64, depth 4, 120 ep, lr 0.01, wd 5e-4,
+dropout 0.5, val-selected). GGCN/GloGNN = authors' official model classes at library defaults; LINKX = in-house; SADE-GCN/SIMGA = our reimplementations (no public code). Test acc (%).
+
+   dataset     h         LINKX          GGCN        GloGNN      SADE-GCN         SIMGA        POLARIS-U          POLARIS
+     Texas  0.11    80.3±4.7    76.8±6.5    79.2±5.9    76.2±8.1    68.6±7.2    71.6±7.9    80.8±4.9
+ Wisconsin  0.20    82.5±5.3    78.2±4.2    83.7±5.1    77.5±7.0    58.6±11.6    76.1±5.4    84.5±5.1
+   Cornell  0.13    72.7±4.3    68.9±7.0    74.1±3.7    64.1±5.4    46.8±9.7    62.4±7.9    75.7±6.8

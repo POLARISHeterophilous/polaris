@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.ipynb_checkpoints/
+/tmp/
+/data/
+*.pt
+*.log
+!supplementary_materials.pdf

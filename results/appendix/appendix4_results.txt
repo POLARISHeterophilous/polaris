@@ -1,0 +1,24 @@
+
+##### APPENDIX BATCH 4 #####
+
+==================================================================
+Q5  signed coefficient psi at inference (layer 0): repulsion check
+    psi_same / psi_diff over real neighbours; corr(psi, feat. dissim.)
+==================================================================
+dataset      psi_same  psi_diff     gap  r(psi,dissim)
+Texas          -0.260    -0.574   0.314          0.138
+Wisconsin      -0.311    -0.585   0.273         -0.052
+Cornell        -0.562    -0.697   0.136         -0.090
+Actor           0.212     0.171   0.041          0.090
+Cora            0.660     0.708  -0.048          0.014
+
+==================================================================
+Q7  depth sweep on Actor (7.6k nodes): test acc %, mean over 10 splits
+==================================================================
+ depth      GCN      GAT     POLARIS
+     2     28.5     27.9     35.3
+     4     27.3     27.5     35.4
+     8     26.2     25.0     25.2
+    16     25.2     24.0     25.2
+
+##### DONE #####

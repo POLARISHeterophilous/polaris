@@ -1,0 +1,13 @@
+Heterophily benchmark | depth 4, hidden 64, 10 splits (Cora: 1 public split)
+
+  Cora       edge-homophily = 0.810
+  Texas      edge-homophily = 0.108
+  Wisconsin  edge-homophily = 0.196
+  Cornell    edge-homophily = 0.131
+  Actor      edge-homophily = 0.219
+
+dataset        h             MLP             GAT           APPNP           GCNII          GPRGNN           FAGCN             POLARIS-U          POLARIS-E           POLARIS
+Cora        0.81    0.738+-0.00    0.782+-0.00    0.828+-0.00    0.829+-0.00    0.835+-0.00    0.802+-0.00    0.804+-0.00    0.728+-0.00    0.684+-0.00
+Texas       0.11    0.595+-0.05    0.592+-0.06    0.578+-0.05    0.619+-0.06    0.665+-0.05    0.781+-0.06    0.716+-0.08    0.686+-0.05    0.808+-0.05
+Wisconsin   0.20    0.537+-0.04    0.496+-0.04    0.531+-0.06    0.710+-0.07    0.773+-0.05    0.820+-0.04    0.761+-0.05    0.767+-0.05    0.847+-0.05
+Cornell     0.13    0.446+-0.03    0.422+-0.05    0.427+-0.04    0.551+-0.06    0.584+-0.07    0.700+-0.04    0.624+-0.08    0.627+-0.07    0.759+-0.07

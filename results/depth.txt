@@ -1,0 +1,9 @@
+Depth robustness | Wisconsin, hidden 64, 10 Geom-GCN splits
+
+ depth      GCN      GAT    GCNII      POLARIS-U    POLARIS
+     2     50.2     50.0     66.9     81.6     81.0
+     4     54.5     49.6     71.0     76.1     84.7
+     8     54.7     48.2     62.5     71.2     79.4
+    16     48.2     46.1     58.0     50.8     48.0
+    32     48.0     51.6     55.1     48.0     48.0
+    64     48.0     47.8     54.3     48.0     48.0

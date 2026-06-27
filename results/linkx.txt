@@ -1,0 +1,7 @@
+LINKX (NeurIPS 2021) vs POLARIS | depth 4, hidden 64, 10 Geom-GCN splits
+
+   dataset     h         LINKX        POLARIS-U          POLARIS
+     Texas  0.11    80.3±4.7    71.6±7.9    80.8±4.9
+ Wisconsin  0.20    82.5±5.3    76.1±5.4    84.7±5.1
+   Cornell  0.13    73.2±4.3    62.4±7.9    75.9±6.6
+     Actor  0.22    35.5±1.2    33.9±0.8    35.4±1.0

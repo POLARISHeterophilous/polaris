@@ -1,0 +1,6 @@
+Q7: label-safe bias coverage and inference-time attention concentration (mean over 10 Geom-GCN splits; POLARIS signed).
+   dataset      h label_rate bias_edge_frac mean p (infer)   p - h
+     Texas  0.108      0.475          0.126          0.556  +0.448
+ Wisconsin  0.196      0.478          0.134          0.581  +0.385
+   Cornell  0.131      0.475          0.165          0.571  +0.440
+     Actor  0.219      0.480          0.180          0.617  +0.398

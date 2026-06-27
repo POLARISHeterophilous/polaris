@@ -1,0 +1,15 @@
+Q8: entropy target (POLARIS-E) vs calibration | Wisconsin, 10 splits, beta=1, target rho pinned.
+
+   rho  realisedH     ECE     NLL     acc
+  0.20      0.151   0.122   0.669    79.6
+  0.30      0.277   0.124   0.690    78.4
+  0.40      0.433   0.127   0.701    76.7
+  0.50      0.546   0.144   0.730    76.9
+  0.60      0.661   0.138   0.723    75.9
+  0.70      0.777   0.142   0.725    76.9
+  0.80      0.827   0.134   0.707    76.7
+  0.90      0.892   0.134   0.677    77.1
+
+Pearson r(rho, ECE) = +0.611
+Pearson r(rho, NLL) = +0.264
+Pearson r(realisedH, ECE) = +0.691

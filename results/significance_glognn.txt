@@ -1,0 +1,16 @@
+Paired Wilcoxon: POLARIS vs GloGNN (official), same 10 Geom-GCN splits, same harness, shared protocol.
+Positive mean diff = POLARIS higher. Per-split acc (%).
+
+   dataset     POLARIS   GloGNN   meanΔ   p-value
+     Texas     80.8     79.2    +1.6    0.2188
+           POLARIS splits: [78.4, 91.9, 78.4, 78.4, 83.8, 81.1, 78.4, 75.7, 75.7, 86.5]
+           GloGNN splits: [78.4, 91.9, 78.4, 83.8, 75.7, 81.1, 75.7, 70.3, 73.0, 83.8]
+
+ Wisconsin     84.5     83.7    +0.8    0.4336
+           POLARIS splits: [74.5, 88.2, 92.2, 88.2, 82.4, 80.4, 80.4, 84.3, 84.3, 90.2]
+           GloGNN splits: [76.5, 82.4, 90.2, 90.2, 78.4, 82.4, 84.3, 80.4, 80.4, 92.2]
+
+   Cornell     75.7     74.1    +1.6    0.5098
+           POLARIS splits: [78.4, 89.2, 83.8, 73.0, 73.0, 78.4, 67.6, 75.7, 64.9, 73.0]
+           GloGNN splits: [73.0, 78.4, 78.4, 78.4, 70.3, 73.0, 70.3, 67.6, 75.7, 75.7]
+

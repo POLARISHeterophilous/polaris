@@ -1,0 +1,23 @@
+
+##### Q1: sparse attention vs entropy control / signedness #####
+dataset   variant                  acc     ECE  realised H
+Texas     POLARIS-U (softmax)       71.6   0.175       0.711
+Texas     POLARIS-U (sparsemax)     68.1   0.171       0.558
+Texas     POLARIS (signed)          80.8   0.151       0.654
+Wisconsin POLARIS-U (softmax)       76.1   0.123       0.753
+Wisconsin POLARIS-U (sparsemax)     76.9   0.132       0.528
+Wisconsin POLARIS (signed)          84.7   0.107       0.702
+Cornell   POLARIS-U (softmax)       62.4   0.223       0.705
+Cornell   POLARIS-U (sparsemax)     61.6   0.223       0.540
+Cornell   POLARIS (signed)          75.9   0.148       0.678
+Cora      POLARIS-U (softmax)       80.4   0.117       0.996
+Cora      POLARIS-U (sparsemax)     79.9   0.124       0.944
+Cora      POLARIS (signed)          68.4   0.092       0.984
+
+##### Q2: multi-head POLARIS (signed); acc%, realised entropy #####
+dataset                h=1             h=2             h=4
+Texas          80.8|H=0.65     82.7|H=0.73     80.0|H=0.77
+Wisconsin      84.7|H=0.70     86.1|H=0.77     86.3|H=0.79
+Cornell        75.9|H=0.68     78.1|H=0.75     76.5|H=0.80
+
+##### DONE #####

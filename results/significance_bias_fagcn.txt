@@ -1,0 +1,13 @@
+=== M6: label-safe discriminative-bias ablation (POLARIS) ===
+dataset        with bias       no bias    delta
+Texas          80.8±4.9     80.8±6.1     +0.0
+Wisconsin      84.7±5.1     84.1±5.2     +0.6
+Cornell        75.9±6.6     74.3±4.1     +1.6
+Actor          35.4±1.0     35.3±1.4     +0.1
+
+=== M1: POLARIS vs FAGCN, paired Wilcoxon over shared splits ===
+dataset        POLARIS     FAGCN   mean d   p-value
+Texas           80.8      78.1     +2.7    0.2656
+Wisconsin       84.7      82.0     +2.7    0.1406
+Cornell         75.9      70.0     +5.9    0.0156
+Actor           35.4      35.2     +0.2    0.3594
